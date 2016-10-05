@@ -70,7 +70,7 @@ table_name = Comment.table_name
 ActiveRecord::Base.connection.execute(
     "ALTER SEQUENCE #{table_name}_id_seq RESTART WITH 4"
 )
-email, pass = 'serge.hardy@wanadoo.fr', 'aktjsz'
+email, pass = 'serge.hardy@wanadoo.fr', 'password'
 
 
 
@@ -97,14 +97,14 @@ Presenter.create!(
 )
 
 
-email, pass = 'aurelian.morvant@gmail.com', '1ChatEstMort'
+email, pass = 'serge.hardy@orange.fr', 'password'
 
 
 
 me = Account.new
 me.id=3
 me.email = email
-me.maintainer = true # set to false if you want a presenter account
+me.maintainer = false # set to false if you want a presenter account
 me.password = pass
 me.password_confirmation = pass
 me.confirmed_at = Time.now
