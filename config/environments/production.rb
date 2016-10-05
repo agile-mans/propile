@@ -51,7 +51,7 @@ Propile::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false lit-woodland-2172.herokuapp.com
   #config.action_mailer.default_url_options = { :host => 'lit-woodland-2172.herokuapp.com' }
-  config.action_mailer.default_url_options = { :host => 'cfp.agiletour.agilerennes.org' }
+  config.action_mailer.default_url_options = { :host => 'agile-mans.org' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       port:                  25,
